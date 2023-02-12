@@ -6,3 +6,7 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+//order.forEach(item=>console.log(item.quantity+"       "+item.itemName+"       "+item.unitPrice))
+let [quantity,itemName,unitPrice]=item
+console.log(order)

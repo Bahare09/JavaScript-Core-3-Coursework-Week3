@@ -70,3 +70,33 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+//Task 1
+// function getName(arr) {
+//   arr
+//     .filter((item) => item.house === "Gryffindor")
+//     .forEach((item) => console.log(item.firstName + " " + item.lastName));
+// }
+// getName(hogwarts);
+
+hogwarts.filter((person) => {
+  if (person.house === "Gryffindor") {
+    let { firstName, lastName } = person;
+    console.log(firstName + " " + lastName);
+  }
+});
+
+//Task 2
+// function getName(arr) {
+//   arr
+//     .filter((item) => item.pet !== null && item.occupation === "Teacher")
+//     .forEach((item) => console.log(item.firstName + " " + item.lastName));
+// }
+// getName(hogwarts);
+
+hogwarts.filter((person) => {
+  if (person.pet !== null && person.occupation === "Teacher") {
+    let { firstName, lastName } = person;
+    console.log(firstName + " " + lastName);
+  }
+});
