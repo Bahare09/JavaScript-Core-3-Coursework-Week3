@@ -8,5 +8,12 @@ let order = [
 ];
 
 //order.forEach(item=>console.log(item.quantity+"       "+item.itemName+"       "+item.unitPrice))
-let [quantity,itemName,unitPrice]=item
-console.log(order)
+
+order.forEach(({ quantity: quan, itemName: item, unitPrice: price }) =>
+  console.log(quan, item, price)
+);
+let sum = 0;
+for (const { unitPrice: price, quantity: quan } of order) {
+  sum += quan * price;
+}
+console.log(`total ${sum}`);
