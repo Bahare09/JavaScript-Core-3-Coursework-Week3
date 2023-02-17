@@ -100,3 +100,5 @@ hogwarts.filter((person) => {
     console.log(firstName + " " + lastName);
   }
 });
+
+

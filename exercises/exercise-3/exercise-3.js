@@ -16,4 +16,4 @@ let sum = 0;
 for (const { unitPrice: price, quantity: quan } of order) {
   sum += quan * price;
 }
-console.log(`total ${sum}`);
+console.log(`total: ${sum}`);
